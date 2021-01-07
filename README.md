@@ -1,3 +1,3 @@
 # AMM_2021
 
-Her kan én følge vores udviklingforløb og det færdigprodukt via Github. Sikke en teknologisk tid vi lever i!
+Her kan én følge vores udviklingsforløb og det færdige produkt via Github. Sikke en teknologisk tid vi lever i!
