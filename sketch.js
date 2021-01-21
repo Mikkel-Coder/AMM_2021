@@ -4,7 +4,7 @@ var asteroids = [];
 function setup() {
   createCanvas(windowWidth, windowHeight);
   ship = new Ship();
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 5; i++) {
   asteroids.push(new Asteroid());
   }
 }
