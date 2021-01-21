@@ -19,6 +19,7 @@ function draw() {
   for (var i = 0; i < asteroids.length; i++) {
     asteroids[i].render();
     asteroids[i].update();
+    asteroids[i].edges();
   }
 }
 function keyReleased() {
