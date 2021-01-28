@@ -59,3 +59,4 @@ function Asteroid(pos, r) {
       }
       }
 }
+
