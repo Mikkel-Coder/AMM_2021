@@ -48,20 +48,32 @@ function draw() {
   ship.update();
   ship.edges();
 }
-function keyReleased() {
-  ship.setRotation(0);
-  ship.boosting(false);
-}
+
 
 function keyPressed() {
-  if (key == ' ') {
-    lasers.push(new Laser(ship.pos, ship.heading));
-  } else if (keyCode == RIGHT_ARROW) {
-    ship.setRotation(0.1);
-  } else if (keyCode == LEFT_ARROW) {
-    ship.setRotation(-0.1)
-  } else if (keyCode == UP_ARROW) {
-    ship.boosting(true);
+  if (key ===  " ") {
+    lasers.push(new Laser(ship.pos, ship.heading)) = true;
+  } 
+  if (keyCode === RIGHT_ARROW) {
+    ship.setRotation(0.07) = true;
+  } 
+  if (keyCode === LEFT_ARROW) {
+    ship.setRotation(-0.07) = true;
+  }
+  if (keyCode === UP_ARROW) {
+    ship.boosting(true) = true;
   }
 
+}
+
+function keyReleased() {
+  if (keyCode === RIGHT_ARROW) {
+    ship.setRotation(0);
+  }
+  if (keyCode === LEFT_ARROW) {
+    ship.setRotation(0);
+  }
+  if (keyCode === UP_ARROW) {
+    ship.boosting(false) = false;
+  }
 }
