@@ -1,4 +1,4 @@
-function Ship() {
+function Ship() { // Her laver vi skibet som man spiller som.
   this.pos = createVector (width/2, height/2);
   this.r = 20;
   this.heading = 0;
@@ -6,12 +6,12 @@ function Ship() {
   this.vel = createVector(0,0)
   this.isBoosting = false;
 
-  this.boosting = function(b) {
+  this.boosting = function(b) { // Denne del får spilleren til at bevæge sig frem ad.
     this.isBoosting = b;
 
   }
 
-  this.update = function() {
+  this.update = function() { // Opdatere spillerens model
     if (this.isBoosting) {
       this.boost();
     }
@@ -19,7 +19,7 @@ function Ship() {
     this.vel.mult(0.99);
   }
 
-  this.boost = function() {
+  this.boost = function() { // Fortæller hvor hurtigt spilleren skal booste, og får spilleren til at føle at de flyver rundt.
     var force = p5.Vector.fromAngle(this.heading); 
     force.mult(0.1)
     this.vel.add(force);
