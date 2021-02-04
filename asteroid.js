@@ -1,4 +1,4 @@
-function Asteroid(pos, r) {
+function Asteroid(pos, r) { // Laver selve ateroids'ne og placere dem tilfældigt.
     if (pos) {
         this.pos = pos.copy();
     } else {
@@ -39,7 +39,7 @@ function Asteroid(pos, r) {
         pop();
     }
 
-    this.breakup = function() {
+    this.breakup = function() { // Laver 2 nye asteroids hvis den store bliver skudt på.
         var newA = [];
         newA[0] = new Asteroid(this.pos, this.r);
         newA[1] = new Asteroid(this.pos, this.r);
