@@ -1,4 +1,4 @@
-function Ship() { // Her laver vi skibet som man spiller som.
+function Ship() { // Her bestemmer vi hvilken vej skibet bevæger sig, og ting som velocity.
   this.pos = createVector (width/2, height/2);
   this.r = 20;
   this.heading = 0;
